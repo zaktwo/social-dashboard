@@ -2,6 +2,9 @@
 
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
+
+## Live site url
+Live site : https://amazing-alfajores-2926e1.netlify.app/
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
