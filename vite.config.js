@@ -1,5 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-    base: "/"
+    base: process.env.NODE_ENV === 'prodution' ? '/vite-js' : '/',
+    publicDir: 'public',
+
 })
