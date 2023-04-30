@@ -5,6 +5,8 @@
 
 ## Live site url
 Live site : https://amazing-alfajores-2926e1.netlify.app/
+------------------------
+github pages: https://zaktwo.github.io/social-dashboard/
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
