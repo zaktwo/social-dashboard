@@ -1,76 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    Social Media Dashboard
-  Total Followers: 23,004
 
-  Dark Mode
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
 
-  
+<body>
+  <div class="wrapper">
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+    <header>
+      <section class="title">
+        <div class="title-description">
+          <h1> Social Media Dashboard </h1>
+          <h3> Total Followers: 23,004</h3>
+        </div>
+        <div class="dark-mode">
+          <h3>Dark Mode</h3>
+          <input type="radio" name="theme-change" id="theme-mode">
+        </div>
+      </section>
+      <section class="total-follower">
+        <div class="social-facebook">
+          @nathanf
+          1987
+          Followers
+          12 Today
+        </div>
+        <div class="social-twitter">
+          @nathanf
+          1044
+          Followers
+          99 Today
+        </div>
+        <div class="social-instagram">
+          @realnathanf
+          11k
+          Followers
+          1099 Today
+        </div>
+        <div class="social-youtub">
+          Nathan F.
+          8239
+          Subscribers
+          144 Today
+        </div>
+      </section>
+    </header>
+    <main class="overview">
+      <h2> Overview - Today</h2>
+      <section class="stats-fi">
+        <div class="stats-facebook">
+          <div class="fb-views">
+            Page Views
+            87
+            3%
+          </div>
+          <div class="fb-like">
+            Likes
+            52
+            2%
+          </div>
+        </div>
+        <div class="stats-instagram">
+          <div class="insta-likes">
+            Likes
+            5462
+            2257%
+          </div>
+          <div class="insta-views">
+            Profile Views
+            52k
+            1375%
+          </div>
+        </div>
+      </section>
+      <section class="stats-ty">
+        <div class="stats-twitter">
+          <div class="twitt-retwitt">
+            Retweets
+            117
+            303%
+          </div>
+          <div class="twitt-likes">
+            Likes
+            507
+            553%
+          </div>
+        </div>
+        <div class="stats-youtub">
+          <div class="youtube-likes">
+            Likes
+            107
+            19%
+          </div>
+          <div class="youtube-totalviews">
+            Total Views
+            1407
+            12%
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+ 
+  <script type="module" src="/main.js"></script>
+</body>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
 </html>
