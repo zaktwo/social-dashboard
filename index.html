@@ -11,101 +11,106 @@
 <body>
   <div class="wrapper">
 
-    <header>
+    <header class="header">
       <section class="title">
         <div class="title-description">
           <h1> Social Media Dashboard </h1>
           <h3> Total Followers: 23,004</h3>
         </div>
         <div class="dark-mode">
-          <h3>Dark Mode</h3>
-          <input type="radio" name="theme-change" id="theme-mode">
+          <h4>Dark Mode</h4>
+          <form class="container" id="radio-form" method="get" onsubmit="return ischecked();">
+            <div class="radio">
+              <input type="radio" name="radio" id="theme-mode">
+              <label for="theme-mode" class="dark-theme"></label>
+            </div>
+          </form>
         </div>
       </section>
       <section class="total-follower">
-        <div class="social-facebook">
-          @nathanf
-          1987
-          Followers
-          12 Today
+        <div class="social-facebook social-stats">
+          <h4> @nathanf</h4>
+          <p> 1987 </p>
+          <p> Followers</p>
+          <p>12 Today</p>
         </div>
-        <div class="social-twitter">
-          @nathanf
-          1044
-          Followers
-          99 Today
+        <div class="social-twitter social-stats">
+          <h4>@nathanf </h4>
+          <p>1044 </p>
+          <p> Followers</p>
+          <p> 99 Today</p>
         </div>
-        <div class="social-instagram">
-          @realnathanf
-          11k
-          Followers
-          1099 Today
+        <div class="social-instagram social-stats">
+          <h4> @realnathanf </h4>
+          <p> 11k </p>
+          <p>Followers </p>
+          <p>1099 Today</p>
         </div>
-        <div class="social-youtub">
-          Nathan F.
-          8239
-          Subscribers
-          144 Today
+        <div class="social-youtube social-stats">
+          <h4>Nathan F. </h4>
+          <p> 8239</p>
+          <p>Subscribers </p>
+          <p>144 Today</p>
         </div>
       </section>
     </header>
     <main class="overview">
       <h2> Overview - Today</h2>
-      <section class="stats-fi">
+      <section class="stats-fi overview-stats">
         <div class="stats-facebook">
-          <div class="fb-views">
-            Page Views
-            87
-            3%
+          <div class="fb-view overview-box">
+            <h4>Page Views </h4>
+            <p> 87</p>
+            <p> 3%</p>
           </div>
-          <div class="fb-like">
-            Likes
-            52
-            2%
+          <div class="fb-like overview-box">
+            <h4>Likes </h4>
+            <p>52 </p>
+            <p>2% </p>
           </div>
         </div>
-        <div class="stats-instagram">
-          <div class="insta-likes">
-            Likes
-            5462
-            2257%
+        <div class="stats-instagram overview-stats">
+          <div class="insta-likes overview-box">
+            <h4>Likes </h4>
+            <p>5462 </p>
+            <p>2257% </p>
           </div>
-          <div class="insta-views">
-            Profile Views
-            52k
-            1375%
+          <div class="insta-views overview-box">
+            <h4> Profile Views</h4>
+            <p> 52k</p>
+            <p>1375% </p>
           </div>
         </div>
       </section>
-      <section class="stats-ty">
+      <section class="stats-ty overview-stats">
         <div class="stats-twitter">
-          <div class="twitt-retwitt">
-            Retweets
-            117
-            303%
+          <div class="twitt-retwitt overview-box">
+            <h4>Retweets </h4>
+            <p>117 </p>
+            <p>303% </p>
           </div>
-          <div class="twitt-likes">
-            Likes
-            507
-            553%
+          <div class="twitt-likes overview-box">
+            <h4>Likes </h4>
+            <p>507 </p>
+            <p>553% </p>
           </div>
         </div>
-        <div class="stats-youtub">
-          <div class="youtube-likes">
-            Likes
-            107
-            19%
+        <div class="stats-youtub overview-stats">
+          <div class="youtube-likes overview-box">
+            <h4>Likes </h4>
+            <p>107 </p>
+            <p>19% </p>
           </div>
-          <div class="youtube-totalviews">
-            Total Views
-            1407
-            12%
+          <div class="youtube-totalviews overview-box">
+            <h4>Total Views </h4>
+            <p> 1407 </p>
+            <p> 12% </p>
           </div>
         </div>
       </section>
     </main>
   </div>
- 
+
   <script type="module" src="/main.js"></script>
 </body>
 
