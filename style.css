@@ -10,12 +10,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 
   --primary-Lime-Green: 163, 72%, 41%;
   --primary-Bright-Red: 356, 69%, 56%;
   /** @param variableSocialogo */
-  --social-logo-size: 1.3rem; 
+  --social-logo-size: 1.3rem;
   --primary-Facebook: 208, 92%, 53%;
   --primary-Twitter: 203, 89%, 53%;
   --primary-Instagram-linear-gradient-1: 37deg, 97%, 70%;
@@ -172,7 +171,6 @@ body {
   border-radius: 0.4rem;
   margin-bottom: 1rem;
   min-width: 93vw;
-  
 }
 /*******************************************************
                         Header CSS 
@@ -189,9 +187,8 @@ body {
 /*******************************************************
                         overview CSS 
 *******************************************************/
-.overview-box{
+.overview-box {
   padding: 1.5rem;
-
 }
 .stats-side,
 .percent {
@@ -201,15 +198,15 @@ body {
   gap: 3.5rem;
 }
 
-.social-logo{
+.social-logo {
   width: var(--social-logo-size);
   height: var(--social-logo-size);
 }
-.arrow{
+.arrow {
   width: 0.5rem;
   height: 0.5rem;
 }
-.percent-arrow{
+.percent-arrow {
   display: flex;
 }
 
@@ -291,3 +288,80 @@ body {
     background-color: #001632;
   }
 } */
+@media (min-width: 500px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "aliass-header"
+      "alias-overview";
+  }
+  .header {
+    grid-area: aliass-header;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "alias-title"
+      "alias-followers";
+  }
+  .title {
+    grid-area: alias-title;
+  }
+  .total-follower {
+    grid-area: alias-followers;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "alias-fb alias-twit alias-insta alias-youtube";
+    min-width: 100%;
+  }
+  .social-facebook {
+    grid-area: alias-fb;
+  }
+  .social-instagram {
+    grid-area: alias-insta;
+  }
+  .social-twitter {
+    grid-area: alias-twit;
+  }
+  .social-youtube {
+    grid-area: alias-youtube;
+  }
+  .social-stats {
+    width: auto;
+    flex-wrap: wrap;
+
+    min-width: 25%;
+  }
+  .overview {
+    grid-area: alias-overview;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      " alias-title"
+      "alias-statswrap";
+  }
+  .overview-title {
+    grid-area: alias-title;
+  }
+  .stats-wrapper {
+    grid-area: alias-statswrap;
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-rows: 1fr 1fr;
+  }
+  .overview-stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .overview-box {
+    min-width: 20rem;
+  }
+}
