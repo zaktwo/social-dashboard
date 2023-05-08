@@ -194,10 +194,13 @@ body {
 .percent {
   display: flex;
   justify-content: space-between;
+  
   flex-direction: column;
   gap: 3.5rem;
 }
-
+.percent{
+  align-items: end;
+}
 .social-logo {
   width: var(--social-logo-size);
   height: var(--social-logo-size);
@@ -206,8 +209,12 @@ body {
   width: 0.5rem;
   height: 0.5rem;
 }
+
 .percent-arrow {
   display: flex;
+  justify-content: center;
+ align-items: center;
+ gap: 0.5rem;
 }
 
 /*******************************************************
