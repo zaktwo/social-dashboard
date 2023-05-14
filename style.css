@@ -315,6 +315,14 @@ body {
   }
   .title {
     grid-area: alias-title;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .dark-mode{
+    border: none;
   }
   .total-follower {
     grid-area: alias-followers;
