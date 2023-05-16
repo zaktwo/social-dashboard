@@ -185,6 +185,24 @@ body {
   border-top: 1px solid gray;
   padding-top: 1rem;
 }
+.theme-toggle{
+  height: 1.5rem;
+}
+input[type='radio']{
+  content: "";
+  appearance: none;
+  opacity: 0;
+}
+/* .dark-mode > input[type='radio']{
+  content: "";
+  appearance: none;
+  opacity: 0;
+} */
+.toggle-background{
+background: linear-gradient(225deg, hsl(var(--Toggle-dark-theme-linear-gradient-1)) 0,
+hsl(var(--Toggle-dark-theme-linear-gradient-2)) 98.02%);
+
+}
 /*******************************************************
                         overview CSS 
 *******************************************************/
