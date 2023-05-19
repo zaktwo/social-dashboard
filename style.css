@@ -398,6 +398,7 @@ hsl(var(--Toggle-dark-theme-linear-gradient-2)) 98.02%);
     gap: 1rem;
   }
   .overview-box {
+    display: flex;
     min-width: 20rem;
   }
 }
