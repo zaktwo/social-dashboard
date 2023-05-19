@@ -228,9 +228,7 @@ hsl(var(--Toggle-dark-theme-linear-gradient-2)) 98.02%);
   width: 0.5rem;
   height: 0.5rem;
 }
-.fb-like{
-  display: flex;
-}
+
 .percent-arrow {
   display: flex;
   justify-content: center;
