@@ -185,29 +185,40 @@ body {
   border-top: 1px solid gray;
   padding-top: 1rem;
 }
-.theme-toggle{
+.theme-toggle {
   height: 1.5rem;
 }
-input[type='radio']{
+input[type="radio"] {
   content: "";
   appearance: none;
   opacity: 0;
+  width: 2rem;
+  height: 1rem;
+  border-radius: 5px;
+  background: #111;
+  cursor: pointer;
 }
-input[type='radio']:checked{
-background: linear-gradient(var(--linear-gradient-dark-theme));
+input[type="radio"]:checked {
+  background: linear-gradient(
+    90deg,
+    hsl(210, 78%, 56%) 0%,
+    hsl(146, 68%, 55%) 100%
+  );
+  
 }
-input[type='radio']::before{
-
+input[type="radio"]::before {
 }
 /* .dark-mode > input[type='radio']{
   content: "";
   appearance: none;
   opacity: 0;
 } */
-.toggle-background{
-background: linear-gradient(225deg, hsl(var(--Toggle-dark-theme-linear-gradient-1)) 0,
-hsl(var(--Toggle-dark-theme-linear-gradient-2)) 98.02%);
-
+.toggle-background {
+  background: linear-gradient(
+    225deg,
+    hsl(var(--Toggle-dark-theme-linear-gradient-1)) 0,
+    hsl(var(--Toggle-dark-theme-linear-gradient-2)) 98.02%
+  );
 }
 /*******************************************************
                         overview CSS 
@@ -219,11 +230,11 @@ hsl(var(--Toggle-dark-theme-linear-gradient-2)) 98.02%);
 .percent {
   display: flex;
   justify-content: space-between;
-  
+
   flex-direction: column;
   gap: 3.5rem;
 }
-.percent{
+.percent {
   align-items: end;
 }
 .social-logo {
@@ -238,8 +249,8 @@ hsl(var(--Toggle-dark-theme-linear-gradient-2)) 98.02%);
 .percent-arrow {
   display: flex;
   justify-content: center;
- align-items: center;
- gap: 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /*******************************************************
@@ -356,7 +367,7 @@ hsl(var(--Toggle-dark-theme-linear-gradient-2)) 98.02%);
     align-items: center;
     margin-bottom: 1rem;
   }
-  .dark-mode{
+  .dark-mode {
     border: none;
   }
   .total-follower {
